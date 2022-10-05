@@ -3,18 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 const res = await fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random?results=5');
 const wows = await res.json();
-const title = 'Butts';
+const title = 'Wow';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
       <h1>Welcome to <span class="text-gradient">{title}</span></h1>
 		<ul role="list" class="link-card-grid">
-			<Card
+<!-- 			<Card
 				href="https://docs.astro.build/"
 				title="Documentation"
 				body="Learn how Astro works and explore the official API docs."
-			/>
+			/> -->
         </ul>
         <ul role="list" class="link-card-grid">
           {wows.map(wow => (
