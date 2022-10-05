@@ -1,0 +1,7 @@
+---
+const response = await fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random?results=5');
+const wows = response.json();
+
+---
+
+{JSON.stringify(wows, null, 2)}
